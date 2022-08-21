@@ -6,7 +6,7 @@ pip install -r requirements.txt
 ```
 
 ## EndPoints
-Para este fin solo se muestran los endpoints GET y POST, sin embargo pueden probar los verbos faltantes como PUT (con los mismos parametros solo que al final /PK/) y DELETE (/PK/)
+Para este fin solo se muestran los endpoints GET y POST, sin embargo pueden probar los verbos faltantes como PUT (con los mismos parametros solo que al final /PK/) y DELETE (/PK/) en POSTMAN
 ### Pais
 ```
 POST  http://localhost:8000/api/reserva/pais/
