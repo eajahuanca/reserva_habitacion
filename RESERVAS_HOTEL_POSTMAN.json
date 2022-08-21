@@ -1,0 +1,519 @@
+{
+	"info": {
+		"_postman_id": "325f024f-80d3-4f92-bb51-57643107655d",
+		"name": "RESERVAS_HOTEL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET PAIS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/reserva/pais/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reserva",
+						"pais",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET TIPO DOCUMENTO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/reserva/tipodocumento/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reserva",
+						"tipodocumento",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET METODO DE PAGO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/reserva/metodopago/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reserva",
+						"metodopago",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET CLIENTE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/reserva/cliente/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reserva",
+						"cliente",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET HOTEL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/reserva/hotel/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reserva",
+						"hotel",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET CATEGORIA",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/reserva/categoria/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reserva",
+						"categoria",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET HABITACION",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/reserva/habitacion/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reserva",
+						"habitacion",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ESTADO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/reserva/estado/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reserva",
+						"estado",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET RESERVA CLIENTE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/reserva/reservacliente/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reserva",
+						"reservacliente",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET RESERVA ESTADO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/reserva/reservaestado/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reserva",
+						"reservaestado",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST PAIS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pais\":\"PERU\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/reserva/pais/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reserva",
+						"pais",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST TIPO DOCUMENTO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipo\": \"CI\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/reserva/tipodocumento/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reserva",
+						"tipodocumento",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST METODO DE PAGO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pago\": \"VIA PAYPAL\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/reserva/metodopago/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reserva",
+						"metodopago",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST CLIENTE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"JUAN\",\r\n    \"apellido\": \"PEREZ PEPITO\",\r\n    \"direccion\": \"LAS RETAMAS ESQ.AROMA NRO. 10\",\r\n    \"correo_electronico\": \"juan.pepito@gmail.com\",\r\n    \"telefono\": \"6547774\",\r\n    \"pais_id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/reserva/cliente/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reserva",
+						"cliente",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST HOTEL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"EL TABU\",\r\n    \"direccion\": \"CHICLAYO CALLE LAS MERCEDES NRO. 110\",\r\n    \"pais_id\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/reserva/hotel/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reserva",
+						"hotel",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST CATEGORIA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"categoria\": \"NORMAL\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/reserva/categoria/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reserva",
+						"categoria",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST HABITACION",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"descripcion\": \"2 CAMAS, DUCHA\",\r\n    \"hotel_id\": 1,\r\n    \"categoria_id\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/reserva/habitacion/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reserva",
+						"habitacion",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST ESTADO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"estado\": \"ELIMINADO\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/reserva/estado/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reserva",
+						"estado",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST RESERVA CLIENTE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cliente_id\": 1,\r\n    \"razon_social\": \"PEPITO Y ASOCIADOS\",\r\n    \"numero_documento\": \"412211115\",\r\n    \"tipo_documento_id\": 1,\r\n    \"habitacion_id\": 1,\r\n    \"fecha_desde\": \"2022-08-18\",\r\n    \"fecha_hasta\": \"2022-08-20\",\r\n    \"costo_total\": 150,\r\n    \"metodo_pago_id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/reserva/reservacliente/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reserva",
+						"reservacliente",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST RESERVA ESTADO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"reserva_id\": 1,\r\n    \"estado_id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/reserva/reservaestado/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reserva",
+						"reservaestado",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

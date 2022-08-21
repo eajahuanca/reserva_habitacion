@@ -1,12 +1,12 @@
 from django.db import models
-from reserva_back.modulos.administracion.models import LogModel
+from modulos.administracion.models import LogModel
 
 
 class Pais(LogModel):
     pais = models.CharField(max_length=20, unique=True)
 
 
-class TipoDcoumento(LogModel):
+class TipoDocumento(LogModel):
     tipo = models.CharField(max_length=20, unique=True)
 
 
@@ -47,7 +47,7 @@ class ReservaCliente(LogModel):
     cliente = models.ForeignKey(Cliente, related_name='+', on_delete=models.PROTECT)
     razon_social = models.CharField(max_length=50)
     numero_documento = models.CharField(max_length=15)
-    tipo_documento = models.ForeignKey(TipoDcoumento, related_name='+', on_delete=models.PROTECT)
+    tipo_documento = models.ForeignKey(TipoDocumento, related_name='+', on_delete=models.PROTECT)
     habitacion = models.ForeignKey(Habitacion, related_name='+', on_delete=models.PROTECT)
     fecha_desde = models.DateField()
     fecha_hasta = models.DateField()

@@ -1,8 +1,8 @@
 from rest_framework import serializers
 
-from models import (
+from .models import (
     Pais,
-    TipoDcoumento,
+    TipoDocumento,
     MetodoPago,
     Cliente,
     Hotel,
@@ -17,19 +17,19 @@ from models import (
 class PaisSerializers(serializers.ModelSerializer):
     class Meta:
         model = Pais
-        field = ['id', 'pais']
+        fields = ['id', 'pais']
 
 
 class TipoDocumentoSerializers(serializers.ModelSerializer):
     class Meta:
-        model = TipoDcoumento
-        field = ['id', 'tipo']
+        model = TipoDocumento
+        fields = ['id', 'tipo']
 
 
 class MetodoPagoSerializers(serializers.ModelSerializer):
     class Meta:
         model = MetodoPago
-        field = ['id', 'pago']
+        fields = ['id', 'pago']
 
 
 class ClienteSerializer(serializers.ModelSerializer):
@@ -38,7 +38,7 @@ class ClienteSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Cliente
-        field = [
+        fields = [
             'id',
             'nombre',
             'apellido',
@@ -56,7 +56,7 @@ class HotelSerializers(serializers.ModelSerializer):
 
     class Meta:
         model = Hotel
-        field = [
+        fields = [
             'id',
             'nombre',
             'direccion',
@@ -68,18 +68,18 @@ class HotelSerializers(serializers.ModelSerializer):
 class CategoriaSerializers(serializers.ModelSerializer):
     class Meta:
         model = Categoria
-        field = ['id', 'categoria']
+        fields = ['id', 'categoria']
 
 
 class HabitacionSerializers(serializers.ModelSerializer):
     hotel = HotelSerializers(read_only=True)
-    hote_id = serializers.IntegerField()
+    hotel_id = serializers.IntegerField()
     categoria = CategoriaSerializers(read_only=True)
     categoria_id = serializers.IntegerField()
 
     class Meta:
         model = Habitacion
-        field = [
+        fields = [
             'id',
             'descripcion',
             'hotel_id',
@@ -92,7 +92,7 @@ class HabitacionSerializers(serializers.ModelSerializer):
 class EstadoSerializers(serializers.ModelSerializer):
     class Meta:
         model = Estado
-        field = ['id', 'estado']
+        fields = ['id', 'estado']
 
 
 class ReservaClienteSerializers(serializers.ModelSerializer):

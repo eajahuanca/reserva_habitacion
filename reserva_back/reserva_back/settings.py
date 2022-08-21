@@ -19,28 +19,25 @@ BASE_APPS = [
 ]
 
 LOCAL_APPS = [
-    'modulos.seguridad',
+    # 'modulos.seguridad',
     'modulos.reserva',
 ]
 
 THIRD_APPS = [
     'corsheaders',
     'rest_framework',
-    'rest_framework.authtoken',
-    'rest_framework_simplejwt',
-    'rest_framework_simplejwt.token_blacklist',
 ]
 
 INSTALLED_APPS = BASE_APPS + LOCAL_APPS + THIRD_APPS
 
-REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
-    ],
-    'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticated',
-    )
-}
+# REST_FRAMEWORK = {
+#     'DEFAULT_AUTHENTICATION_CLASSES': [
+#         'rest_framework_simplejwt.authentication.JWTAuthentication',
+#     ],
+#     'DEFAULT_PERMISSION_CLASSES': (
+#         'rest_framework.permissions.IsAuthenticated',
+#     )
+# }
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -78,7 +75,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'dbreservahabitacion',
         'USER': 'postgres',
-        'HOST': 'host_postgres',
+        'PASSWORD': 'sistemas',
+        'HOST': '127.0.0.1',
+        # 'HOST': 'host_postgres',
         'PORT': 5432
     }
 }
@@ -106,18 +105,18 @@ USE_I18N = True
 
 USE_TZ = True
 
-AUTH_USER_MODEL = 'seguridad.Usuario'
+# AUTH_USER_MODEL = 'seguridad.Usuario'
 
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:8000",
 ]
 
-SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(days=1),
-    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
-    'ROTATE_REFRESH_TOKENS': True,
-    'BLACKLIST_AFTER_ROTATION': True
-}
+# SIMPLE_JWT = {
+#     'ACCESS_TOKEN_LIFETIME': timedelta(days=1),
+#     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
+#     'ROTATE_REFRESH_TOKENS': True,
+#     'BLACKLIST_AFTER_ROTATION': True
+# }
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
